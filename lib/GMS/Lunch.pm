@@ -6,12 +6,13 @@ use GMS::Lunch::Tools;
 
 use Dancer ':syntax';
 
-
 our $VERSION = '0.1';
+
+set template => 'template_toolkit';
 
 get '/' => sub {
     my $lunch = getCache;
-    template 'index';
+    template 'index', {lunch => $lunch};
 };
 
 get '/api' => sub {

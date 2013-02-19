@@ -6,7 +6,7 @@
 <meta content='default' name='apple-mobile-web-app-status-bar-style'> 
 <meta content='width=device-width, minimum-scale=1.0, maximum-scale=1.0' name='viewport'> 
 <link href="/css/style.css" rel="stylesheet">
-<script src="http://jubeat.kr/jquery.js"></script>
+<script src="http://jubeat.kr/js/jquery.js"></script>
 <script src="/js/lunch.js"></script>
 <title>오늘의 급식</title>
 </head>

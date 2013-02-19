@@ -1,8 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(202, 202, 202, 1) 100%) no-repeat fixed;
     text-align: center;
+    font-size: 1em;
 }
 
 div#title {
@@ -19,12 +19,17 @@ div#title {
     margin-bottom: 16px;
 }
 
-div#title span {
-    display: block;
-    text-align: center;
-    font-size: 16px;
+div#title h1 {
+    display: inline-block;
+    margin: 0;
     padding: 9px;
-
+    
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    text-shadow: 0 -1px 1px #000;
+    
+    
 }
 
 div#content {
@@ -69,4 +74,155 @@ div.tab#lunch div.tab_title {
 
 div.tab#dinner div.tab_title {
     background: rgba(253, 188, 62, 0.7);
+}
+
+button {
+    position: relative;
+    display: inline-block;
+    margin: 5px 0 5px 0;
+    padding: 14px;
+    border: solid 1px #aaa;
+    background: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%,  rgb(240, 240, 240) 100%);
+    background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(240, 240, 240) 100%);
+    border-radius: 15px;
+    box-shadow: 0px 0px 2px #666;
+    font-size: 0.95em;
+    font-weight: bold;
+    color: #3a3a3a;
+    text-shadow: 1px 1px 2px #ccc;
+}
+
+button:active {
+    background: -webkit-linear-gradient(top, rgb(250, 250, 250) 0%,  rgb(220, 220, 220) 100%);
+    background: linear-gradient(to bottom, rgb(250, 250, 250) 0%, rgb(220, 220, 220) 100%);
+    border: solid 1px #888;
+    
+}
+
+button.left {
+    padding-left: 35px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+button.left:before {
+    content: "";
+    display: block;
+    width: 18px; height: 18px;
+    position: absolute;
+    left: 10px;
+    background: url(/img/icons-18-white.png), rgba(80, 80, 80, 0.7);
+    background-position: -144px 0px;
+    border-radius: 50%;
+    
+}
+
+button.right {
+    padding-right: 35px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+button.right:before {
+    content: "";
+    display: block;
+    width: 18px; height: 18px;
+    position: absolute;
+    right: 10px;
+    background: url(/img/icons-18-white.png), rgba(80, 80, 80, 0.7);
+    background-position: -108px 0px;
+    border-radius: 50%;
+    
+}
+button.star {
+    padding-left: 35px;
+    
+}
+button.star:before {
+    content: "";
+    display: block;
+    width: 18px; height: 18px;
+    position: absolute;
+    left: 10px;
+    background: url(/img/icons-18-white.png), rgba(80, 80, 80, 0.7);
+    background-position: -468px 0px;
+    border-radius: 50%;
+    
+    
+}
+
+button.twitter {
+    background: -webkit-linear-gradient(top, rgb(122, 188, 255) 0%, rgb(96, 171, 248) 44%,  rgb(64, 150, 238) 100%);
+    background: linear-gradient(to bottom, rgb(122, 188, 255) 0%, rgb(96, 171, 248) 44%,  rgb(64, 150, 238) 100%);
+    color: white;
+    text-shadow: 0 0 2px #666;
+    border: solid 1px rgb(0, 154, 203);
+}
+
+button.twitter:active {
+    background: -webkit-linear-gradient(top, rgb(96, 171, 248) 0%,  rgb(64, 150, 238) 100%);
+    background: linear-gradient(to bottom, rgb(96, 171, 248) 0%,  rgb(64, 150, 238) 100%);
+
+    border: solid 1px rgb(0, 127, 165);
+    
+}
+
+button.yellow {
+    background: -webkit-linear-gradient(top, rgb(254, 214, 94) 0%,  rgb(254, 191, 4) 100%);
+    background: linear-gradient(to bottom, rgb(254, 214, 94) 0%,  rgb(254, 191, 4) 100%);
+    
+    border: solid 1px rgb(254, 191, 4);
+}
+
+button.yellow {
+    background: -webkit-linear-gradient(top, rgb(252, 238, 170) 0%,  rgb(251, 227, 115) 100%);
+    background: linear-gradient(to bottom, rgb(252, 238, 170) 0%,  rgb(251, 227, 115) 100%);
+    
+    border: solid 1px rgb(254, 191, 4);
+}
+
+button.yellow:active {
+    background: -webkit-linear-gradient(top, rgb(255, 203, 90) 0%,  rgb(254, 191, 4) 100%);
+    background: linear-gradient(to bottom, rgb(255, 203, 90) 0%,  rgb(254, 191, 4) 100%);
+}
+
+div#title button {
+    padding: 6px;
+    padding-left: 7px; 
+    padding-right: 7px;
+    border-radius: 12px;
+    font-size: 10pt;
+}
+div#title button.title_left {
+/*
+    float: left;
+    margin-left: 5px;
+*/
+    position: absolute;
+    left: 5px;
+}
+div#title button.title_right {
+/*
+    float: right;
+    margin-right: 5px;
+*/
+    position: absolute;
+    right: 5px;
+
+}
+
+div#title button.info {
+    padding-left: 25px;
+}
+
+div#title button.info:before {
+    content: "";
+    display: block;
+    width: 18px; height: 18px;
+    position: absolute;
+    left: 5px;
+    background: url(/img/icons-18-white.png), rgba(80, 80, 80, 0.7);
+    background-position: -540px 0px;
+    border-radius: 50%;
+    
+    
 }

@@ -1,0 +1,28 @@
+<!--index.tt-->
+<div id="title">
+    <span>오늘의 급식</span>
+</div>
+
+<div id="content">
+안녕하세요! 오늘의 급식은..
+
+<div class="tab" id="lunch">
+    <div class="tab_title">
+        중식
+    </div>
+    <div class="tab_content">
+    치즈밥, 치즈김치, 치즈면, 치즈국, 슬라이스 치즈
+    </div>
+</div>
+
+<div class="tab" id="dinner">
+    <div class="tab_title">
+        석식
+    </div>
+    <div class="tab_content">
+    치즈밥, 치즈김치, 치즈면, 치즈국, 슬라이스 치즈
+    </div>
+</div>
+
+..입니다. 감사합니다!
+</div>

@@ -83,7 +83,7 @@ sub getCache {
 sub updateCache {
     my $lunch_data = getLunch;
     
-    open my $fh, '>', '/tmp/lunch.yaml';
+    open my $fh, '>', '/tmp/lunch.yaml' or die 'failed to open lunch.yaml';
     binmode $fh, ":encoding(utf8)";
     print $fh YAML::Dump( $lunch_data );
     close $fh;

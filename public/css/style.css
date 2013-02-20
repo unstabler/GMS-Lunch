@@ -32,9 +32,13 @@ div#title h1 {
     
 }
 
-div#content {
+div.content {
     margin: 10px;
 } 
+
+div.content#temp {
+    display: none;
+}
 
 div.tab {
     /* display: block-inline; */

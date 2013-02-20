@@ -20,11 +20,15 @@ get '/api' => sub {
 };
 
 get '/api/yesterday' => sub {
-    to_json(getLunch(Yesterday));
+    my $data = getLunch(Yesterday);
+    $data->{'method'} = 'yesterday';
+    to_json($data);
 };
 
 get '/api/tomorrow' => sub {
-    to_json(getLunch(Tomorrow));
+    my $data = getLunch(Tomorrow);
+    $data->{'method'} = 'tomorrow';
+    to_json($data);
 };
 
 

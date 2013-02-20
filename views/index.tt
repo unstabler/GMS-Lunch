@@ -5,9 +5,11 @@
     <button class="title_right twitter home" id="lunchbot">트위터 봇</button>
 </div>
 
-<div id="content">
+<div class="content" id="main">
+<span>
 오늘은 <% lunch.date %> 입니다.<br>
 오늘의 급식은..
+</span>
 
 <div class="tab" id="lunch">
     <div class="tab_title">
@@ -30,7 +32,41 @@
         <% ELSE %>오늘은 석식이 없습니다.<% END %>
     </div>
 </div>
+<span>
 ..입니다. 감사합니다!
+</span>
+<div id="buttons">
+    <button class="left" id="yesterday">어제의 급식</button><button class="right" id="tomorrow">내일의 급식</button><p>
+    <button class="star" id="add_to_home">홈 화면에 추가하기</button>
 </div>
-<button class="left" id="yesterday">어제의 급식</button><button class="right" id="tomorrow">내일의 급식</button><br>
-<button class="star" id="add_to_home">홈 화면에 추가하기</button><br>
+</div>
+
+<div class="content" id="temp">
+<span>
+</span>
+
+<div class="tab" id="lunch">
+    <div class="tab_title">
+        중식
+    </div>
+    <div class="tab_content">
+        <% IF lunch.lunch %>
+        <% lunch.lunch %> 
+        <% ELSE %>오늘은 중식이 없습니다.<% END %>
+    </div>
+</div>
+
+<div class="tab" id="dinner">
+    <div class="tab_title">
+        석식
+    </div>
+    <div class="tab_content">
+        <% IF lunch.dinner %>
+        <% lunch.dinner %>
+        <% ELSE %>오늘은 석식이 없습니다.<% END %>
+    </div>
+</div>
+
+
+<button class="star" id="return">돌아가기</button>
+</div>

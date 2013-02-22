@@ -48,11 +48,19 @@ function processLunch(data) {
     data.date;
     data.method = (data.method == "yesterday")?"어제":(data.method == "tomorrow")?"내일":"";
     
+    if (!data.lunch) data.lunch = "오늘은 중식이 없습니다.";
+    if (!data.dinner) data.dinner = "오늘은 석식이 없습니다.";
+    
+    
     $('div.content#temp span').text(sprintf("%s %s의 급식은..", data.date, data.method));
     
     
     $('div.content#main').hide();
     $('div.content#temp').show();
+    
+    
+    $('div.content#temp div.tab#lunch div.tab_content').text(data.lunch);
+    $('div.content#temp div.tab#dinner div.tab_content').text(data.dinner);
     
     
 }

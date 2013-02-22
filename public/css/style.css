@@ -189,6 +189,23 @@ button.yellow:active {
     background: linear-gradient(to bottom, rgb(255, 203, 90) 0%,  rgb(254, 191, 4) 100%);
 }
 
+button.back {
+    padding-left: 35px;
+    
+}
+button.back:before {
+    content: "";
+    display: block;
+    width: 18px; height: 18px;
+    position: absolute;
+    left: 10px;
+    background: url(/img/icons-18-white.png), rgba(80, 80, 80, 0.7);
+    background-position: -324px 0px;
+    border-radius: 50%;
+    
+    
+}
+
 div#title button {
     padding: 6px;
     padding-left: 7px; 

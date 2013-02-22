@@ -68,5 +68,5 @@
 </div>
 
 
-<button class="star" id="return">돌아가기</button>
+<button class="back" id="return">돌아가기</button>
 </div>

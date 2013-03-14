@@ -3,6 +3,9 @@ body {
     padding: 0;
     text-align: center;
     font-size: 1em;
+    
+    font-family: "NanumGothic", "Arial";
+    
 }
 
 div#title {
@@ -49,7 +52,8 @@ div.tab {
     text-align: center;    
     
     
-
+    border: solid 1px #aaa;
+    
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
@@ -73,21 +77,24 @@ div.tab_content {
 }
 
 div.tab#lunch div.tab_title {
-    background: rgba(197, 218, 76, 0.7);
+    background: rgb(214, 229, 129);
 }
 
 div.tab#dinner div.tab_title {
-    background: rgba(253, 188, 62, 0.7);
+    background: rgb(254, 208, 119);
 }
 
 button {
+    background: rgb(240, 240, 240); /* IE8+ */
+    background: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%,  rgb(240, 240, 240) 100%);
+    background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(240, 240, 240) 100%);
+    
     position: relative;
     display: inline-block;
     margin: 5px 0 5px 0;
     padding: 14px;
     border: solid 1px #aaa;
-    background: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%,  rgb(240, 240, 240) 100%);
-    background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(240, 240, 240) 100%);
+
     border-radius: 15px;
     box-shadow: 0px 0px 2px #666;
     font-size: 0.95em;
@@ -155,6 +162,7 @@ button.star:before {
 }
 
 button.twitter {
+    background: rgb(122, 188, 255);
     background: -webkit-linear-gradient(top, rgb(122, 188, 255) 0%, rgb(96, 171, 248) 44%,  rgb(64, 150, 238) 100%);
     background: linear-gradient(to bottom, rgb(122, 188, 255) 0%, rgb(96, 171, 248) 44%,  rgb(64, 150, 238) 100%);
     color: white;
@@ -163,6 +171,7 @@ button.twitter {
 }
 
 button.twitter:active {
+    background: rgb(64, 150, 238);
     background: -webkit-linear-gradient(top, rgb(96, 171, 248) 0%,  rgb(64, 150, 238) 100%);
     background: linear-gradient(to bottom, rgb(96, 171, 248) 0%,  rgb(64, 150, 238) 100%);
 
@@ -178,6 +187,7 @@ button.yellow {
 }
 
 button.yellow {
+    background: rgb(252, 238, 170);
     background: -webkit-linear-gradient(top, rgb(252, 238, 170) 0%,  rgb(251, 227, 115) 100%);
     background: linear-gradient(to bottom, rgb(252, 238, 170) 0%,  rgb(251, 227, 115) 100%);
     
@@ -185,6 +195,7 @@ button.yellow {
 }
 
 button.yellow:active {
+    background: rgb(255, 203, 90);
     background: -webkit-linear-gradient(top, rgb(255, 203, 90) 0%,  rgb(254, 191, 4) 100%);
     background: linear-gradient(to bottom, rgb(255, 203, 90) 0%,  rgb(254, 191, 4) 100%);
 }
@@ -246,4 +257,27 @@ div#title button.info:before {
     border-radius: 50%;
     
     
+}
+
+div#ie_warning {
+    /* 구버전 IE 경고 */
+    
+    background: rgb(199, 221, 250);
+    padding: 7px;
+    text-align: left;
+    font-size: 10pt;
+    
+}
+
+div#ie_warning img#ie6_funeral {
+    float: left;
+    margin-right: 7px;
+}
+
+div#ie_warning h3 {
+    margin: 3px;
+}
+
+div#ie_warning a {
+    color: black;
 }

@@ -1,4 +1,10 @@
 $(function() {
+
+    if (!window.console) {
+        //자바스크립트 콘솔 기능이 없는 구형 브라우저(IE8 등)에서는 오류가 나기 때문에 회피를 해줘야 함.
+        console = {log: function() {}};
+    }
+        
     $('button#lunchbot').click(function() { location.href="http://twitter.com/gms_lunchbot"; });
     $('button#yesterday').click(getLunch); 
     $('button#tomorrow').click(getLunch);
@@ -7,7 +13,14 @@ $(function() {
        $('div.content#main').show();
         
     });
+    $('button#info').click(function() {
+        alert("경기모바일과학고등학교 오늘의 급식\n30710 박규환\n\njQuery Mobile이 아닌 순수 제 실력으로 새 버전을 개발하고 있습니다.\n많이 불편하시더라도 양해 바랍니다.\n\nThanks, Larry!\nhttp://www.perl.org");
+    });
     
+    $('button#github').click(function() {
+        location.href="http://github.com/unstabler/GMS-Lunch";
+    });
+
 });
 
 function getLunch(event) {

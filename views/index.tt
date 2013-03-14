@@ -1,6 +1,6 @@
 <!--index.tt-->
 <div id="title">
-    <button class="title_left yellow info">제작자</button>
+    <button class="title_left yellow info" id="info">제작자</button>
     <h1>오늘의 급식</h1>
     <button class="title_right twitter home" id="lunchbot">트위터 봇</button>
 </div>
@@ -37,7 +37,7 @@
 </span>
 <div id="buttons">
     <button class="left" id="yesterday">어제의 급식</button><button class="right" id="tomorrow">내일의 급식</button><p>
-    <button class="star" id="add_to_home">홈 화면에 추가하기</button>
+    <button class="star" id="github">github에서 소스 보기</button>
 </div>
 </div>
 

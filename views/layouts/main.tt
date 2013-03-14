@@ -13,6 +13,15 @@
 </head>
 <body>
 <div id="container">
+<!--[if lte IE 8]>
+<div id="ie_warning">
+    <img src="/img/ie6_funeral.png" height="70" id="ie6_funeral" title="IE6은 2010년 3월 1일 사망하여 이미 장례식이 치뤄졌습니다.">
+    <h3>이제 제발 편히 잠들게 해주세요!</h3>
+    현재 오래된 버전의 브라우저를 이용하고 계십니다.<br>
+    현재 버전을 계속 사용하시게 되면 많은 사이트들이 제대로 나오지도 않을 뿐더러, <b>보안에도 심각한 문제</b>가 생길 수 있습니다.<br>
+    혹시 괜찮으시다면 <a href="http://windows.microsoft.com/ko-kr/internet-explorer/download-ie">최신 버전의 인터넷 익스플로러 (윈도우 비스타 이상)</a> 또는, <a href="http://google.com/chrome">구글 크롬</a>, <a href="http://www.mozilla.or.kr/ko/">모질라 파이어폭스</a> 등의 다른 브라우저를 설치해보는 건 어떨까요?
+</div>
+<![endif]-->
 <% content %>
 </div>
 </body>
